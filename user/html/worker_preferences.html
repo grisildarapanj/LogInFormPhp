@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<head>
+<link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+<script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+<!------ Include the above in your HEAD tag ---------->
+</head>
+<body>
+<div class="well">
+    <ul class="nav nav-tabs">
+      <li class="active"><a href="#home" data-toggle="tab">Profile</a></li>
+    
+    </ul>
+    <div id="myTabContent" class="tab-content">
+      <div class="tab-pane active in" id="home">
+        <form id="tab" method="post" action= "../php/worker_php.php">
+            <label>First Name</label>
+            <input type="text"  class="input-xlarge" name="name" id="name">
+            <label>Last Name</label>
+            <input type="text" class="input-xlarge" name="surname" id="surname">
+            <label>Email</label>
+            <input type="text"  class="input-xlarge" name="email" id="email">
+            <label>Address</label>
+            <input type="text"  class="input-xlarge" name="address" id="address">
+           <!--  <label>Photo</label>
+            <input type="file"  class="input-xlarge" name="photo" id="photo"> -->
+          	<div>
+        	    <button class="btn btn-primary">Update</button>
+        	</div>
+        </form>
+      </div>
+
+  </div>
+</div>
+</body>
+</html>

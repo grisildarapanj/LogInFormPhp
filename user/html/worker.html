@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html>
+  <head>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.0/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <link href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css" rel="stylesheet" id="bootstrap-css">
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+    <script src="//code.jquery.com/jquery-1.11.1.min.js"></script>
+    <!-- shtimi i jquery -->
+    <script type="text/javascript" src="JS/jquery.js"></script>
+    <script src="../js/upload_file.js"></script>
+    <script src="../js/prov.js"></script>
+    <script src="../js/get_data.js"></script>
+    <link rel="stylesheet" href="../css/user_css.css">
+<!--     <script src="../js/change_data.js"></script>--></head>
+ <script>
+function myFunction(){
+   //   browser.history.deleteAll();
+
+   // window.location.href = "../../register/html/logimi2.html";
+   for(var i=0;i<10;i++){
+  window.location.replace('../../register/html/logimi2.html');
+ }
+  // Page.ClientScript.RegisterStartupScript(this.GetType(),"clearHistory","ClearHistory();",true);
+  // var Backlen=history.length;   
+  // history.go(-Backlen); 
+
+  // wind
+          // var Backlen=history.length;  
+          //  history.go(-Backlen);
+          // window.location.href="../../register/html/logimi2.html";ow.location.href='../../register/html/logimi2.html';  
+
+}
+</script> 
+ <script type="text/javascript" src="../../register/js/after_logout.js"></script>
+ <style>
+  .aaa d{
+    dispay:block;
+  }
+ </style>
+<body  >
+    <div class="navbar">
+      <p style="color: blue; font-size:40px;margin-right: 20%;margin-top: 5%;"> User Panel </p>
+        <div class="dropdown" style="margin-left:50%;">
+          <button class="dropbtn">Welcome,user
+            <i class="fa fa-caret-down"></i>
+          </button>
+          <div class="dropdown-content">
+          <!--   <a href="../../register/html/logimi2.html">Logout</a> -->
+          <form  action="../../register/php/logout.php"  style="display: block;"> 
+          <button  >Log out</button>
+          </form> 
+          </div>
+        </div> 
+    </div>
+<!-- shtimi -->
+    <div class="container">
+      <div class="row">
+        <div class="col-sm-4 col-md-4 user-details">
+          <div class="user-image">
+            <img   class="img-circle">
+          </div>
+          <div class="user-info-block">
+            <div class="user-heading">
+                    <h3></h3>
+                    <span class="help-block"></span>
+                </div>
+                <ul class="navigation">
+                    <li class="active">
+                        <a data-toggle="tab" href="#information">
+                            <span class="glyphicon glyphicon-user"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <!-- <a   href="worker_preferences.html"> -->
+                        <a   href="worker_preferences.html" id="aaa">
+                            <span  class="glyphicon glyphicon-cog"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a  href="../../Chat/Chat/kryesore.html">
+                            <span class="glyphicon glyphicon-envelope"></span>
+                        </a>
+                    </li>
+                    <li>
+                        <a  href="#events">
+                            <span class="glyphicon glyphicon-calendar"></span>
+                        </a>
+                    </li>
+                </ul>
+                <div class="user-body">
+                    <div class="tab-content">
+                        <div id="information" class="tab-pane active">
+                     <div id="myTabContent" class="tab-content">
+      <div class="tab-pane active in" id="home">
+        <form id="tab" method="post" action= "user.php">
+          <!-- shtimi i vendit te fotos -->
+        <span  class="change">
+           <p id="nameLabel" >Bosh </p>
+           <p id="surname"> Bosh</p>
+           <p id="email">Bosh</p>
+           <p id="address">Bosh</p>
+           <img src="" id="photo" />
+        </span>  
+        
+         
+      </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+  </div>
+</div>
+
+<body>
+</html>
